@@ -1,0 +1,33 @@
+{
+  "name": "prisma",
+  "version": "1.0.0",
+  "description": "simple used graphql with prisma application",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -e js,graphql -x babel-node src/server.js",
+    "dev": "nodemon -e js,graphql -x babel-node --inspect src/server.js",
+    "test": "jest",
+    "deploy": "prisma deploy --env-file .env"
+  },
+  "author": "Mohammed Al-Reai <mhamad.aa1997.aa@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.6",
+    "@babel/node": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "env-cmd": "^9.0.3",
+    "graphql-cli": "^3.0.11",
+    "graphql-yoga": "^1.17.4",
+    "jsonwebtoken": "^8.5.1",
+    "prisma-binding": "^2.3.10"
+  },
+  "repository": "https://github.com/MohammedALREAI/prisma1_setup.git"
+}
